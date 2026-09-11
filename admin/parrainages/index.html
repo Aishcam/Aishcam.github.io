@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AION OS" />
+    <meta name="theme-color" content="#071d35" />
+    <meta name="google" content="notranslate" />
+    <title>AION OS</title>
+    <!--
+      Couleur de fond appliquée immédiatement au tout premier rendu, avant même
+      le chargement du CSS de l'app (qui, en aperçu Bolt/webcontainer, est injecté
+      par JS après coup — contrairement à un build de production où le <link>
+      stylesheet bloque déjà le rendu). Sans ça, l'écran est blanc par défaut du
+      navigateur pendant ce court instant, avant de basculer sur le bleu nuit
+      #071d35 déjà utilisé partout dans l'app (background-auth, html/body).
+      Ne remplace aucun chargement de données ; enlève seulement le flash blanc
+      qui précède l'apparition du contenu.
+    -->
+    <style>
+      html, body { background-color: #071d35; margin: 0; }
+    </style>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <link rel="preload" as="image" href="/aion-background-saphir-couture-4k.png" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="/aion-background-nebuleuse-mobile.webp" media="(max-width: 767px)" />
+    <script type="module" crossorigin src="/assets/index-2_DfDS3M.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DYldOocC.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
